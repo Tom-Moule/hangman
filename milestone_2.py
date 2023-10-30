@@ -8,7 +8,7 @@ word = random.choice(word_list)
 
 print(word)
 
-guess = input("select a single letter")
+user_letter_guess = input("select a single letter")
 
 if len(guess) == 1 and guess.isalpha():
 
