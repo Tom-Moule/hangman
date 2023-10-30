@@ -6,8 +6,7 @@ word = random.choice(word_list)
 #print(word)
 
 
-#user_letter_guess = input("select a single letter")
-
+#the below makes sure final user input is a single alphabetic character
 def validate_input(user_input):
 
   while True:
@@ -24,7 +23,7 @@ def validate_input(user_input):
   return user_input
 
 
-
+#the below function checks whether user inputted character is in the hidden word
 def check_input(user_input):
 
   user_input = user_input.lower()
@@ -39,6 +38,7 @@ def check_input(user_input):
     print (f"Sorry, {user_input} is not in the word. Try again.")
 
 
+#below function asks for input, validates it, and checks whether it is in hidden word
 def get_input_validate_and_check():
   user_input = input("select a single letter")
   validated_input = validate_input(user_input)
