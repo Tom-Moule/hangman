@@ -10,7 +10,7 @@ print(word)
 
 user_letter_guess = input("select a single letter")
 
-if len(guess) == 1 and guess.isalpha():
+if len(user_letter_guess) == 1 and user_letter_guess.isalpha():
 
   print ("Good Guess")
 
