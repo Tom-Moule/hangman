@@ -159,6 +159,23 @@ class Hangman:
 
 def play_game(word_list, num_lives = 5):
 
+  """ 
+  Plays the hangman game, while checking for conditions that will end the game
+  
+  Parameters:
+    word_list - str,
+            a list of words that could be chosen as the hidden word
+    num_lives - int,
+            the number of lives a user has at the start of the game
+
+  Returns:
+    iteratively calls the ask_for_input_and_check method, updates user with
+    messages about their progress, and ends the game when needed.
+
+
+  """
+
+ 
   hangman_object = Hangman(word_list, num_lives)
 
   print(hangman_object.word_guessed, "these are the hidden letters you need to guess")
